@@ -8,13 +8,7 @@ public class CalculadoraApp {
             //sout "syustem out println
             System.out.println("****Calculadora***");
             //Mostramos el menú
-            System.out.println("""
-                    1. Suma
-                    2. Resta
-                    3. Multiplicación
-                    4. División
-                    5. Salir
-                    """);
+            mostrarMenu();
 
             System.out.print("Elige una opción: ");
             try {
@@ -48,4 +42,16 @@ public class CalculadoraApp {
             }//fin catch
         }//fin while
     }//fin main
+
+    private static void mostrarMenu() {
+        System.out.println("****Calculadora***");
+        System.out.println("""
+                1. Suma
+                2. Resta
+                3. Multiplicación
+                4. División
+                5. Salir
+                """);
+    }//fin mostrarMenu
+
 }//fin clase
