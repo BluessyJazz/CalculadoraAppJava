@@ -12,7 +12,6 @@ public class CalculadoraApp {
             //Leemos la opción del usuario
             try {
                 var operacion = Integer.parseInt(consola.nextLine());
-                int resultado = 0;
                 if (operacion >= 1 && operacion <= 4) {
                     ejecutarOperacion(operacion, consola);
                 }
@@ -46,10 +45,10 @@ public class CalculadoraApp {
 
     private static void ejecutarOperacion(int operacion, Scanner consola) {
         System.out.print("Escribe el primer valor: ");
-        var valor1 = Integer.parseInt(consola.nextLine());
+        var valor1 = Double.parseDouble(consola.nextLine());
         System.out.print("Escribe el segundo valor: ");
-        var valor2 = Integer.parseInt(consola.nextLine());
-        int resultado = 0;
+        var valor2 = Double.parseDouble(consola.nextLine());
+        double resultado = 0;
         switch (operacion) {
             case 1 -> resultado = valor1 + valor2;
             case 2 -> resultado = valor1 - valor2;
