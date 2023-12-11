@@ -6,7 +6,7 @@ public class CalculadoraApp {
         Scanner consola = new Scanner(System.in);
         while (true) {
             //sout "syustem out println
-            System.out.println("****Calculadora***");
+            System.out.println("**** Calculadora ***");
             //Mostramos el menú
             mostrarMenu();
             //Leemos la opción del usuario
